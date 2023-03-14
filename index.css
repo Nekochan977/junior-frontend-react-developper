@@ -13,6 +13,12 @@ body{
   font-size: 2rem;
   display: flex;
 }
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 
 
 /************
@@ -104,10 +110,50 @@ NAVIGATION
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/**/
+.navigation-menu{
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.85em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: 0px;
+  position: relative;
+  padding: 10px 20px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 30px 0 0 30px;
+  margin-bottom: 8px;
+}
+.navigation-item a{
+  color: #333333;
+}
+.navigation-item{
+  align-items: center;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.icon{
+  background-color: #11d6f0;
+  color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+  padding: 10px;
+}
+/************
+MAIN SECTION
+*************/
 .main{
   width: 100%;
 }
+/************
+HERO SECTION
+*************/
 .hero-img{
   background-image: url("./assets/james-harrison-unsplash.jpg");
   height: 100vh;
@@ -130,23 +176,9 @@ NAVIGATION
   justify-content: center;
   align-items: center;
 }
-/*.input-cursor {*/
-/*  display: inline-block;*/
-/*  width: 2px;*/
-/*  height: 42px;*/
-/*  background-color: white;*/
-/*  margin-left: 8px;*/
-/*}*/
-/*@keyframes blink {*/
-/*  0% {opacity: 1;}*/
-/*  40% {opacity: 1;}*/
-/*  60% {opacity: 0;}*/
-/*  100% {opacity: 0;}*/
-/*}*/
-/*Then, inside .input-cursor:*/
-/*.input-cursor {*/
-/*     animation: blink .6s linear infinite alternate;*/
-/*   }*/
+.text {
+  font-weight: 600;
+}
 .text.sec-text:before{
   content: "";
   position: absolute;
