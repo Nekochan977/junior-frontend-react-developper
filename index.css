@@ -165,7 +165,7 @@ HERO SECTION
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -187,6 +187,31 @@ HERO SECTION
   background-color: transparent;
   border-left: 2px solid #4070F4;
   animation: animate 4s steps(12) infinite;
+}
+.icon-links-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.link-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 100%;
+}
+.link-icon a{
+  margin: auto;
+  position: relative;
+  top: 60%;
+  left: 30%;
+  transform: translate(-40%, -50%);
 }
 @keyframes animate{
   40%, 60%{
