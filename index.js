@@ -54,7 +54,7 @@ const textLoad = () => {
         text.textContent = "I am super motivated";
     }, 4000);
     setTimeout(() => {
-        text.textContent = "I am also an Painter";
+        text.textContent = "I am also a Painter";
     }, 8000); //1s = 1000 milliseconds
 }
 
