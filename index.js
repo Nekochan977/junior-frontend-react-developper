@@ -1,3 +1,4 @@
+//text animation
 const textDisplay = document.getElementById("typed")
 const phrases = ['Hello, My name is Nadja.', 'I am a Junior Developer.', 'Contact-me! ']
 let i = 0
@@ -65,3 +66,5 @@ const textRemove = () => {
 textLoad();
 textRemove();
 setInterval(textLoad, 12000);
+
+

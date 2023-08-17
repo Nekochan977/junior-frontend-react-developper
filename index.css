@@ -98,6 +98,9 @@ NAVIGATION
   position: relative;
   z-index: 6;
   margin: 40px 20px 10px;
+  /*text-align: center;*/
+}
+.type-wrap{
   text-align: center;
 }
 .site-title {
@@ -110,6 +113,9 @@ NAVIGATION
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.navigation{
+  text-align: start;
+}
 .navigation-menu{
   font-size: 14px;
   font-weight: 500;
@@ -120,20 +126,26 @@ NAVIGATION
   align-items: flex-start;
   letter-spacing: 0px;
   position: relative;
-  padding: 10px 20px;
-  position: relative;
+  padding-left: unset;
   text-decoration: none;
-  border-radius: 30px 0 0 30px;
   margin-bottom: 8px;
 }
+
 .navigation-item a{
   color: #333333;
 }
+
 .navigation-item{
   align-items: center;
   display: flex;
   margin: 10px;
-  justify-content: center;
+  width: 100%;
+  border-radius: 30px 0 0 30px;
+  padding: 1rem;
+}
+.navigation-item:active{
+  background-color: rgba(176, 236, 243, 0.49);
+  color: inherit;
 }
 
 .icon{
@@ -213,6 +225,10 @@ HERO SECTION
   left: 30%;
   transform: translate(-40%, -50%);
 }
+
+/************
+ANIMATION
+*************/
 @keyframes animate{
   40%, 60%{
     left: calc(100% + 4px);
