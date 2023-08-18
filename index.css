@@ -42,6 +42,12 @@ NAVIGATION
   padding-left: 0;
   padding-right: 0;
 }
+.header.animate-header{
+  animation: animateHeader 1s ease-in;
+}
+.header.animate-reverse{
+  animation: animateReverse 1s ease-in;
+}
 .profile-picture-block {
   position: relative;
   background-color: rgba(17, 214, 240, 0.30);
@@ -157,6 +163,10 @@ NAVIGATION
   margin-right: 5px;
   padding: 10px;
 }
+
+.responsive-header {
+  display: none;
+}
 /************
 MAIN SECTION
 *************/
@@ -235,5 +245,69 @@ ANIMATION
   }
   100%{
     left: 0%;
+  }
+}
+
+@keyframes animateHeader {
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: 250px;
+  }
+}
+
+@keyframes animateReverse {
+  0%{
+    margin-left: 250px;
+  }
+  100%{
+    margin-left: 0;
+  }
+}
+
+
+@media only screen and (max-width: 991px){
+  .header {
+    display: block;
+    position: fixed;
+    left: -285px;
+    top: 55px;
+    width: 285px;
+    height: 100%;
+    z-index: 9999;
+    box-shadow: 5px 0 5px -5px rgba(35, 34, 34, 0.19);
+  }
+  .responsive-header {
+    height: 55px;
+    position: fixed;
+    background: #fff;
+    z-index: 9999;
+    width: 100%;
+    padding: 12px 15px;
+    display: block;
+    color: #11d6f0;
+    box-shadow: 0 3px 6px 3px rgba(0, 0, 0, .06);
+  }
+  .responsive-header-name {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  img.responsive-logo {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+    margin-right: 5px;
+    border: 3px solid rgba(17, 214, 240, 0.30);;
+  }
+  .responsive-header .responsive-icon {
+    position: absolute;
+    right: 37px;
+    top: 13px;
+    font-size: 30px;
   }
 }

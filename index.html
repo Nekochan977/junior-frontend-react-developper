@@ -14,6 +14,13 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
           rel="stylesheet">
+    <!-- Fontawsome CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+    />
 </head>
 <body>
 <!-- HEADER -->
@@ -23,7 +30,6 @@
             <div class="my-photo">
                 <img src="assets/Nadja-portrait-photo.jpeg" alt="profile-photo" class="img-fluid">
             </div>
-
         </div>
         <!-- HEADER-HEAD -->
         <div class="site-title-block">
@@ -36,39 +42,52 @@
                 </div>
                 <span id="typed"></span>
             </div>
-
-            <nav class="navigation">
-                <ul class="navigation-menu" id="navigation-menu">
-                    <li class="navigation-item">
-                        <img src="assets/icons/home.svg" alt="home icon" width="20" height="20" class="icon">
-                        <a href="#home">
-                            Home
-                        </a>
-                    </li>
-                    <li class="navigation-item">
-                        <img src="assets/icons/woman-head.svg" alt="woman head icon" width="20" height="20" class="icon">
-                        <a class="" href="#">
-                            About me
-                        </a>
-                    </li>
-                    <li class="navigation-item">
-                        <img src="assets/icons/book-open-cover.svg" alt="book icon" width="20" height="20" class="icon">
-                        <a class="" href="#">
-                            Resume
-                        </a>
-                    </li>
-                    <li class="navigation-item">
-                        <img src="assets/icons/diploma.svg" alt="diplome icon" width="20" height="20" class="icon">
-                        <a class="" href="#">
-                            studies & competences
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
+        <!-- /HEADER-HEAD -->
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul class="navigation-menu" id="navigation-menu">
+                <li class="navigation-item">
+                    <img src="assets/icons/home.svg" alt="home icon" width="20" height="20" class="icon">
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <img src="assets/icons/woman-head.svg" alt="woman head icon" width="20" height="20" class="icon">
+                    <a class="" href="#">
+                        About me
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <img src="assets/icons/book-open-cover.svg" alt="book icon" width="20" height="20" class="icon">
+                    <a class="" href="#">
+                        Resume
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <img src="assets/icons/diploma.svg" alt="diplome icon" width="20" height="20" class="icon">
+                    <a class="" href="#">
+                        studies & competences
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Navigation -->
     </div>
-
 </header>
+<!-- /HEADER -->
+
+<!-- Mobile Header -->
+<div class="responsive-header">
+    <div class="responsive-header-name">
+        <img class="responsive-logo img-fluid" src="assets/Nadja-portrait-photo.jpeg" alt="profile-photo">
+        Nadja Talaouit-Mockli
+    </div>
+    <span class="responsive-icon">
+        <i class="fa-solid fa-bars"></i>
+    </span>
+</div>
 
 <main class="main">
     <section class="hero-section" id="home">

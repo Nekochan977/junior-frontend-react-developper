@@ -67,4 +67,29 @@ textLoad();
 textRemove();
 setInterval(textLoad, 12000);
 
+// Mobile header
+const mobileIcon = document.querySelector(".responsive-icon")
+const header = document.querySelector(".header")
 
+
+// Toggle header
+
+mobileIcon.addEventListener("click", (e)=>{
+    mobileIcon.classList.toggle("active")
+    showHeader()
+})
+
+const showHeader = () => {
+    if(mobileIcon.classList.contains("active")) {
+        header.classList.add("animate-header")
+        header.style.marginLeft = "285px"
+        if(header.classList.contains("animate-reverse")){
+            header.classList.remove("animate-reverse")
+        }
+    } else{
+        header.style.marginLeft = "0px"
+        header.classList.remove("animate-header")
+        header.classList.add("animate-reverse")
+    }
+    console.log(header)
+}
