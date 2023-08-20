@@ -121,6 +121,9 @@ NAVIGATION
 }
 .navigation{
   text-align: start;
+  /* margin-top: 1rem; */
+  z-index: 999;
+  position: relative;
 }
 .navigation-menu{
   font-size: 14px;
@@ -234,6 +237,52 @@ HERO SECTION
   top: 60%;
   left: 30%;
   transform: translate(-40%, -50%);
+}
+
+/************
+ABOUT SECTION
+*************/
+.sub-section {
+  display: block;
+}
+.sub-section .sub-section-inner {
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  /*padding: 70px;*/
+  background-color: #fff;
+}
+.section-title {
+  margin-bottom: 65px;
+  padding-top: 20px;
+}
+.main-title {
+  position: relative;
+  text-align: center;
+}
+.main-title h4 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.section-content {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+.text-content {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /************
