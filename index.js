@@ -72,7 +72,7 @@ const mobileIcon = document.querySelector(".responsive-icon")
 const header = document.querySelector(".header")
 
 
-// Toggle header
+// Toggle mobile header
 
 mobileIcon.addEventListener("click", (e)=>{
     mobileIcon.classList.toggle("active")
@@ -93,3 +93,35 @@ const showHeader = () => {
     }
     console.log(header)
 }
+
+// display just one section
+
+const navigationMenu = document.querySelector(".navigation-menu")
+
+
+const changeSection = () => {
+    const home = document.getElementById("home")
+    const about = document.getElementById("about")
+    for(let i = 0; i < navigationMenu.children.length; i++ ){
+        let item = navigationMenu.children[i]
+        item.addEventListener("click", (e)=>{
+            switch (item.children[1].className) {
+                case 'home' :
+                    home.style.display = "block"
+                    about.style.display = "none"
+
+                    break;
+                case 'about':
+                    console.log("about");
+                    about.style.display = "block"
+                    home.style.display = "none"
+                    break;
+                default:
+                    home.style.display = "block"
+                    about.style.display = "none"
+            }
+        })
+    }
+}
+
+changeSection()
