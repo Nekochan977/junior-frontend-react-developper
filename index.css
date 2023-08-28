@@ -241,6 +241,9 @@ HERO SECTION
 /************
 ABOUT SECTION
 *************/
+#about {
+  display: none;
+}
 .sub-section {
   display: block;
 }
