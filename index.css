@@ -104,7 +104,6 @@ NAVIGATION
   position: relative;
   z-index: 6;
   margin: 40px 20px 10px;
-  /*text-align: center;*/
 }
 .type-wrap{
   text-align: center;
@@ -121,7 +120,6 @@ NAVIGATION
 }
 .navigation{
   text-align: start;
-  /* margin-top: 1rem; */
   z-index: 999;
   position: relative;
 }
@@ -273,9 +271,6 @@ ABOUT SECTION
 .section-content {
   display: flex;
   -ms-flex-wrap: wrap;
-  /*flex-wrap: wrap;*/
-  /*margin-right: -15px;*/
-  /*margin-left: -15px;*/
   padding-bottom: 30px;
   justify-content: center;
 }
@@ -291,14 +286,13 @@ ABOUT SECTION
 .text-content-title,
 .loc-icon,
 .passion-head {
-  color: #3a0ca3;
+  color: #5e60ce;
 }
 .image-content {
   width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* align-content: center; */
   align-items: center;
 }
 .about-img {
@@ -328,16 +322,10 @@ ABOUT SECTION
 .passion-item {
   position: relative;
   border-radius: 15px;
-  /* align-items: center; */
-  /* align-content: center; */
-  /* justify-content: center; */
-  /* justify-items: center; */
   align-items: center;
-  /* align-self: center; */
   padding: 2rem;
   margin: 0 auto;
   text-align: center;
-/* vertical-align: middle;*/
   background: aliceblue;
   width: 15rem;
   height: 15rem;
