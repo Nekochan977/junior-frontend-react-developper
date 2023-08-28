@@ -244,9 +244,9 @@ ABOUT SECTION
 #about {
   display: none;
 }
-.sub-section {
-  display: block;
-}
+/*.sub-section {*/
+/*  display: block;*/
+/*}*/
 .sub-section .sub-section-inner {
   position: relative;
   height: auto;
