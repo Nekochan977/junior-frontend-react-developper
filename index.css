@@ -241,12 +241,12 @@ HERO SECTION
 /************
 CONTENT SECTION
 *************/
-#about {
+#about,
+#resume,
+#competences {
   display: none;
 }
-#resume {
-  display: none;
-}
+
 .sub-section .sub-section-inner {
   position: relative;
   height: auto;
@@ -348,7 +348,10 @@ CONTENT SECTION
   font-weight: 300;
   color: #3a0ca3 ;
 }
-
+.grid-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 /************
 ANIMATION
 *************/
@@ -426,10 +429,6 @@ ANIMATION
   .main {
     margin-left: unset;
   }
-  /* .sub-section-inner {*/
-  /*  display: flex;*/
-  /*  flex-wrap: wrap;*/
-  /*}*/
   .section-content,
   .passion-icons {
     flex-wrap: wrap;

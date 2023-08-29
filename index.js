@@ -103,6 +103,7 @@ const changeSection = () => {
     const home = document.getElementById("home")
     const about = document.getElementById("about")
     const resume = document.getElementById("resume")
+    const competences = document.getElementById("competences")
     for(let i = 0; i < navigationMenu.children.length; i++ ){
         let item = navigationMenu.children[i]
         item.addEventListener("click", (e)=>{
@@ -125,11 +126,19 @@ const changeSection = () => {
                     home.style.display = "none"
                     about.style.display = "none"
                     break;
+                case 'competences':
+                    console.log("competences");
+                    competences.style.display = "block"
+                    home.style.display = "none"
+                    about.style.display = "none"
+                    resume.style.display = "none"
+                    break;
                 default:
                     console.log("default");
                     home.style.display = "block"
                     about.style.display = "none"
                     resume.style.display = "none"
+                    competences.style.display = "none"
             }
         })
     }
