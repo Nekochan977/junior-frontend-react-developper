@@ -102,23 +102,34 @@ const navigationMenu = document.querySelector(".navigation-menu")
 const changeSection = () => {
     const home = document.getElementById("home")
     const about = document.getElementById("about")
+    const resume = document.getElementById("resume")
     for(let i = 0; i < navigationMenu.children.length; i++ ){
         let item = navigationMenu.children[i]
         item.addEventListener("click", (e)=>{
             switch (item.children[1].className) {
                 case 'home' :
+                    console.log("home");
                     home.style.display = "block"
                     about.style.display = "none"
-
+                    resume.style.display = "none"
                     break;
                 case 'about':
                     console.log("about");
                     about.style.display = "block"
                     home.style.display = "none"
+                    resume.style.display = "none"
+                    break;
+                case 'resume':
+                    console.log("resume");
+                    resume.style.display = "block"
+                    home.style.display = "none"
+                    about.style.display = "none"
                     break;
                 default:
+                    console.log("default");
                     home.style.display = "block"
                     about.style.display = "none"
+                    resume.style.display = "none"
             }
         })
     }
