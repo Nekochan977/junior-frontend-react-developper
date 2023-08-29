@@ -239,7 +239,7 @@ HERO SECTION
 }
 
 /************
-ABOUT SECTION
+CONTENT SECTION
 *************/
 #about {
   display: none;
@@ -327,12 +327,13 @@ ABOUT SECTION
   border-radius: 15px;
   align-items: center;
   padding: 2rem;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   text-align: center;
   background: aliceblue;
   width: 15rem;
   height: 15rem;
   color: #4cc9f0;
+  margin: 1rem;
 }
 .item-content {
   position: absolute;
@@ -424,5 +425,17 @@ ANIMATION
   }
   .main {
     margin-left: unset;
+  }
+  /* .sub-section-inner {*/
+  /*  display: flex;*/
+  /*  flex-wrap: wrap;*/
+  /*}*/
+  .section-content,
+  .passion-icons {
+    flex-wrap: wrap;
+  }
+  .text-content,
+  .image-content {
+    width: unset;
   }
 }
