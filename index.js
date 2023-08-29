@@ -119,12 +119,14 @@ const changeSection = () => {
                     about.style.display = "block"
                     home.style.display = "none"
                     resume.style.display = "none"
+                    competences.style.display = "none"
                     break;
                 case 'resume':
                     console.log("resume");
                     resume.style.display = "block"
                     home.style.display = "none"
                     about.style.display = "none"
+                    competences.style.display = "none"
                     break;
                 case 'competences':
                     console.log("competences");
