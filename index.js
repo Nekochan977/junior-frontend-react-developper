@@ -74,6 +74,10 @@ const header = document.querySelector(".header")
 
 // Toggle mobile header
 
+// const activeIcon = () => {
+//
+// }
+
 mobileIcon.addEventListener("click", (e)=>{
     mobileIcon.classList.toggle("active")
     showHeader()
@@ -107,6 +111,10 @@ const changeSection = () => {
     for(let i = 0; i < navigationMenu.children.length; i++ ){
         let item = navigationMenu.children[i]
         item.addEventListener("click", (e)=>{
+            header.classList.add("animate-reverse")
+            header.style.marginLeft = "0px"
+            mobileIcon.classList.remove("active")
+
             switch (item.children[1].className) {
                 case 'home' :
                     console.log("home");
