@@ -311,10 +311,12 @@ CONTENT SECTION
   padding-bottom: 1rem;
 }
 
-.passion {
+.passion,
+.portfolio {
   padding: 2rem;
 }
-.passion-head {
+.passion-head,
+.portfolio-head {
   text-align: center;
 }
 .passion-icons {
@@ -351,6 +353,19 @@ CONTENT SECTION
 .grid-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.portfolio-item {
+  margin: 0.5rem;
+}
+.portfolio-item i {
+  margin-right: 0.5rem;
+  color: #3a0ca3;
 }
 /************
 ANIMATION
