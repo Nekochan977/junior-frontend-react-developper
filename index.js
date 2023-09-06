@@ -111,9 +111,12 @@ const changeSection = () => {
     for(let i = 0; i < navigationMenu.children.length; i++ ){
         let item = navigationMenu.children[i]
         item.addEventListener("click", (e)=>{
-            header.classList.add("animate-reverse")
-            header.style.marginLeft = "0px"
-            mobileIcon.classList.remove("active")
+            console.log(window.innerWidth)
+            if(window.innerWidth < 991){
+                header.classList.add("animate-reverse")
+                header.style.marginLeft = "0px"
+                mobileIcon.classList.remove("active")
+            }
 
             switch (item.children[1].className) {
                 case 'home' :
